@@ -37,6 +37,8 @@ option(GTSAM_ENABLE_MEMORY_SANITIZER        "Enable/Disable memory sanitizer" OF
 option(GTSAM_WITH_TBB                       "Use Intel Threaded Building Blocks (TBB) if available" ON)
 option(GTSAM_WITH_EIGEN_MKL                 "Eigen will use Intel MKL if available" OFF)
 option(GTSAM_WITH_EIGEN_MKL_OPENMP          "Eigen, when using Intel MKL, will also use OpenMP for multithreading if available" OFF)
+option(GTSAM_WITH_SUITESPARSE            "Build with the SuiteSparse linear solver (CHOLMOD)" OFF)
+option(GTSAM_WITH_CUSPARSE               "Build with the CuSparse linear solver (CUDA)" OFF)
 option(GTSAM_THROW_CHEIRALITY_EXCEPTION     "Throw exception when a triangulated point is behind a camera" ON)
 option(GTSAM_BUILD_PYTHON                   "Enable/Disable building & installation of Python module with pybind11" OFF)
 option(GTSAM_INSTALL_MATLAB_TOOLBOX         "Enable/Disable installation of matlab toolbox"  OFF)

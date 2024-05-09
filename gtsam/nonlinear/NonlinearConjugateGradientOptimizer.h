@@ -200,8 +200,8 @@ std::tuple<V, int> nonlinearConjugateGradient(const S &system,
     currentError = system.error(currentValues);
 
     // User hook:
-    if (params.iterationHook)
-      params.iterationHook(iteration, prevError, currentError);
+    // if (params.iterationHook)
+    //   params.iterationHook(iteration, prevError, currentError);
 
     // Maybe show output
     if (params.verbosity >= NonlinearOptimizerParams::ERROR)
